@@ -1,0 +1,10 @@
+html {
+  box-sizing: border-box;
+  background: url(assets/cutecitybg.png) center top;
+  background-size: cover;
+background-repeat: repeat-x;
+  background-color: #ffddeb;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
