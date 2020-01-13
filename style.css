@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 html {
-  box-sizing: border-box;
   background: url(assets/cutecitybg.png) center top;
   background-size: cover;
-background-repeat: repeat-x;
+  background-repeat: repeat-x;
   background-color: #ffddeb;
-  font-family: 'helvetica neue';
+  font-family: 'Pacifico', cursive;
   font-size: 20px;
   font-weight: 200;
 }
