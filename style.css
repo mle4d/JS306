@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Pacifico&display=swap');
 html {
-  background: url(assets/cutecitybg.png) center top;
+  box-sizing: border-box;
+  background: url(assets/cutecitybg.png) center bottom;
   background-size: cover;
   background-repeat: repeat-x;
+  background-attachment: fixed;
   background-color: #ffddeb;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Cute Font', cursive;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 h2 {
   font-family: 'Pacifico', cursive;
   font-size: 75px;
   font-weight: 100;
   color: #9987c5;
-  text-shadow: -4px -1px 0 #ffddeb, 4px -1px 0 #ffddeb, -4px 1px 0 #ffddeb, 4px 1px 0 #ffddeb;
+  text-shadow: -4px -2px 0 #ffddeb, 4px -2px 0 #ffddeb, -4px 2px 0 #ffddeb, 4px 2px 0 #ffddeb;
 }
 input {
   width: 100%;
@@ -33,8 +38,42 @@ input.search {
   width: 120%;
   left: -10%;
   position: relative;
-  top: 10px;
-  z-index: 2;
   border-radius: 5px;
   font-size: 40px;
+}
+.suggestions {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  height: 40vh;
+}
+
+.suggestions li {
+  background: #ffa9a8;
+  list-style: none;
+  border-radius: 5px;
+  margin: 0;
+  padding: 10px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.suggestions li:nth-child(even) {
+  background: linear-gradient(to bottom,  #ffffff 0%,#ffa9a8 100%);
+}
+
+.suggestions li:nth-child(odd) {
+  background: linear-gradient(to top,  #9987c5 0%,#ffffff 100%);
+}
+
+span.population {
+  font-size: 30px;
+}
+
+.hl {
+  background: #a9f1df;
 }
